@@ -1,0 +1,51 @@
+<!-- submit3.html -->
+<html>
+<head>
+<script type="text/javascript">
+function CheckandSubmit () 
+  {
+  var userName = document.getElementById ("userName");
+  if (userName.value.length < 3) 
+     { 
+     alert ("User name must be at least 3 characters in length!");
+     return false;
+     }
+  var password = document.getElementById ("password");
+  var repassword = document.getElementById ("repassword");
+  if (password.value.length < 6) 
+     {
+     alert ("Password must be at least 6 characters in length!");
+     return false;
+     }
+  if (repassword.value != password.value) 
+     {
+     alert ("Passwords do not match!");
+     return false;
+     }
+  var acceptAgreement = document.getElementById ("acceptAgreement");
+  if (!acceptAgreement.checked) 
+     {
+     alert ("You must accept the User Agreement!");
+     return false;
+     }
+
+  return true;
+  }
+</script>
+</head>
+<body>
+    <form id="regForm" method="post" action="http://localhost:9091/Quiz2/Quiz2" onsubmit="return CheckandSubmit ()">
+    <h2> Registration Form </h2>
+        User Name: <input type="text" name="userName" id="userName" />
+        <br />
+        Password: <input type="password" name="password" id="password" />
+        <br />
+        Repeat Password: <input type="password" name="repassword" id="repassword" />
+        <br /><br />
+        <input type="checkbox" name="acceptAgreement" id="acceptAgreement" /> 
+        <label for="acceptAgreement">I accept the User Agreement and Privacy Policy</label>
+        <br /><br />
+        <input type="submit" value="Register" />
+    </form>
+</body>
+</html>
