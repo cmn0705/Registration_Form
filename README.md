@@ -1,6 +1,7 @@
 ﻿*Tags: Html,Java,Servlet,Tomcat
 
 [**Registration Form**](https://cmn0705.github.io/Registration_Form/tomcat/webapps/Quiz2/WEB-INF/registration.html)
+
 This is a Java Servlet (server-side web application):
 * Receive the data sent by registration form
 * Save the received data in a file in server
