@@ -1,11 +1,11 @@
-﻿*Tags: Html,Java,Servlet,Tomcat*
+﻿*Tags: Backend, Web Development*
 
 [**Registration Form**](https://cmn0705.github.io/Registration_Form/tomcat/webapps/Quiz2/WEB-INF/registration.html)
 
-This is a Java Servlet (server-side web application):
-* Receive the data sent by registration form
-* Save the received data in a file in server
-* Send a message/page back to the web browser (the user) to confirm the registration
+**Description:**
+- Developed a server-side web application that can receive the data sent by registration form, save the received data in a file in server, and send a message back to the web browser (user) to confirm the registration.
+- Tools used: *html, java, Servlet, Tomcat*
+
 
 **Note: Running Server on Mac**
 
